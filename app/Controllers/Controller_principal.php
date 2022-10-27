@@ -6,7 +6,8 @@ class Controller_principal extends BaseController
 {
 
     public function index(){
-        echo view('login');
+        echo view('menu');
+        echo view('index');
     }
 
 }
