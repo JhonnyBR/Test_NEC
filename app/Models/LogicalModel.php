@@ -8,5 +8,9 @@ use CodeIgniter\Model;
 class LogicalModel extends Model
 {
     protected $BDSistemTimeAdmin = 'Ventas_de_Vehiculos';
+
+    function ConsultModel($id){
+        
+    }
 }
 ?>
