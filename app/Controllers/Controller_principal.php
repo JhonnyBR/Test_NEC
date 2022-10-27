@@ -18,12 +18,11 @@ class Controller_principal extends BaseController
     {
         echo view('menu');
         echo view('New_sale');
+        $logicalModel = new LogicalModel();
+        print_r($logicalModel->getBrand());
     }
 
     public function ConsultModel()
     {
-        $marca = $this->input->post('marca');
-        $data = $this->LogicalModel->ConsultModel($marca);
-        print_r($marca);
     }
 }

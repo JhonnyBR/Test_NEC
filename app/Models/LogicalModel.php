@@ -9,8 +9,11 @@ class LogicalModel extends Model
 {
     protected $BDSistemTimeAdmin = 'Ventas_de_Vehiculos';
 
-    function ConsultModel($id){
-        
+    function getBrand(){
+        $db      = \Config\Database::connect();
+        $builder = $db->table('marca');
+        $builder->select('*');
+        return $builder->get()->getResultArray();
     }
 }
 ?>
