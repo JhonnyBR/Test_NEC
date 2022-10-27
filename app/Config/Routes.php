@@ -37,7 +37,10 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Controller_principal::index');
 $routes->get('/newsale', 'Controller_principal::NewSale');
-$routes->post('/searchmodel', 'Controller_principal::ConsultModel');
+$routes->match(['get', 'post'], '/GetModels', 'Controller_principal::GetModels');
+$routes->match(['get', 'post'], '/Getabiliavility', 'Controller_principal::Getabiliavility');
+$routes->match(['get', 'post'], '/SaveSale', 'Controller_principal::SaveSale');
+$routes->match(['get', 'post'], '/Getprice', 'Controller_principal::Getprice');
 
 /*
  * --------------------------------------------------------------------
