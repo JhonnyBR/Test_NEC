@@ -25,8 +25,8 @@
 				<td>".$data[$long-1]['Nombre_marca']."</td>
 				<td>".$data[$long-1]['Nombre_modelo']."</td>
 				<td>".$data[$long-1]['cantidadtotal']."</td>
-				<td>".$data[$long-1]['Precio_unidad']."</td>
-				<td>".intval($data[$long-1]['Precio_unidad'])*intval($data[$long-1]['cantidadtotal'])."</td>
+				<td> $". number_format($data[$long-1]['Precio_unidad'],0,0, '.')."</td>
+				<td> $". number_format(intval($data[$long-1]['Precio_unidad'])*intval($data[$long-1]['cantidadtotal']), 0, 0, '.')."</td>
 				</tr>
 				";
 				--$long;
