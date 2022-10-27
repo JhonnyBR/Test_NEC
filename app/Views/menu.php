@@ -6,6 +6,7 @@
     <title>Prueba NEC</title>
     <link href="<?php echo base_url('../../assets/css/bootstrap.min.css'); ?>" rel="stylesheet">
     <script src="<?php echo base_url('../../assets/js/bootstrap.bundle.min.js'); ?>"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
                         <a href="<?php echo base_url(); ?>/home" class="nav-item nav-link active">Home</a>
-                        <a href="<?php echo base_url(); ?>/users" class="nav-item nav-link">Registrar Venta</a>
+                        <a href="<?php echo base_url(); ?>/newsale" class="nav-item nav-link">Registrar Venta</a>
                         <a href="<?php echo base_url(); ?>/newtask" class="nav-item nav-link">Consultar Histórico</a>
                     </div>
                 </div>

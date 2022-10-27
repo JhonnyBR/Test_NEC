@@ -36,6 +36,8 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Controller_principal::index');
+$routes->get('/newsale', 'Controller_principal::NewSale');
+$routes->post('/searchmodel', 'Controller_principal::ConsultModel');
 
 /*
  * --------------------------------------------------------------------

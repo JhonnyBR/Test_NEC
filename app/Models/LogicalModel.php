@@ -8,5 +8,12 @@ use CodeIgniter\Model;
 class LogicalModel extends Model
 {
     protected $BDSistemTimeAdmin = 'Ventas_de_Vehiculos';
+
+    function getBrand(){
+        $db      = \Config\Database::connect();
+        $builder = $db->table('marca');
+        $builder->select('*');
+        return $builder->get()->getResultArray();
+    }
 }
 ?>
