@@ -18,9 +18,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
-                        <a href="<?php echo base_url(); ?>/home" class="nav-item nav-link active">Home</a>
+                        <a href="<?php echo base_url(); ?>/" class="nav-item nav-link active">Home</a>
                         <a href="<?php echo base_url(); ?>/newsale" class="nav-item nav-link">Registrar Venta</a>
-                        <a href="<?php echo base_url(); ?>/newtask" class="nav-item nav-link">Consultar Histórico</a>
+                        <a href="<?php echo base_url(); ?>/sales" class="nav-item nav-link">Consultar Histórico</a>
                     </div>
                 </div>
             </div>

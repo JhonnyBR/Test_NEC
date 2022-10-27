@@ -41,6 +41,7 @@ $routes->match(['get', 'post'], '/GetModels', 'Controller_principal::GetModels')
 $routes->match(['get', 'post'], '/Getabiliavility', 'Controller_principal::Getabiliavility');
 $routes->match(['get', 'post'], '/SaveSale', 'Controller_principal::SaveSale');
 $routes->match(['get', 'post'], '/Getprice', 'Controller_principal::Getprice');
+$routes->get('/sales', 'Controller_principal::Sales');
 
 /*
  * --------------------------------------------------------------------

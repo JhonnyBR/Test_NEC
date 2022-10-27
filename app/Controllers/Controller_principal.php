@@ -94,4 +94,15 @@ class Controller_principal extends BaseController
         );
         return $this->response->setJSON($response);
     }
+
+    public function Sales(){
+        $SalesModel = new SalesModel();
+        $data = $SalesModel->Consultdata();
+        echo view('menu');
+        $data_sales = [
+            "long" => sizeof($data),
+            "data" => $data
+        ];
+        return view('Sales', $data_sales);
+    }
 }
